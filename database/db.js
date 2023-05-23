@@ -2,7 +2,8 @@ import mongoose from 'mongoose';
 
 const Connection = async () => {
 
-    const URL = 'mongodb+srv://flipkart:flipkart@cluster0.un5ygxa.mongodb.net/mydata?retryWrites=true&w=majority';
+    const URL = 'mongodb+srv://flipkart:flipkart@cluster0.kbrcuk8.mongodb.net/mydata?retryWrites=true&w=majority';
+   
     try {
         await mongoose.connect(URL, { useUnifiedTopology: true, useNewUrlParser: true, });
         console.log('Database Connected Succesfully');
